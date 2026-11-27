@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web developer</title>
+    <style>
+        *{
+            box-sizing : border-box;
+        }
+        body{
+            width:min(800px, 100%);
+            margin: 0 auto;
+            min-height: 100vh;
+            background-color:white;
+            color: rgb(190, 235, 10);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: stretch;
+            gap: 20px;
+            padding: 20px;
+        }
+        header,nav,footer{
+            grid-column: 1 / -1;
+        }
+        header{
+            background-color: rgb(241, 12, 81);
+            border-color: rgb(12, 241, 81);
+            border-radius: 10px ;
+            height: 80px;
+            padding: 10px;
+            width: 100%;
+            display: grid;
+            text-align: center;
+        }
+        nav{
+    background-color: rgb(10, 247, 112);
+    border-color: blue;
+    border-radius: 10px;
+    height: 80px;
+    width: 100%;
+    display: grid;
+    text-align: center;
+    color:red;
+}
+        main{
+            background-color: rgb(241, 12, 81);
+            border-color: rgb(170, 225, 19);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            text-align:left;
+            color: blue;
+            height: 400px;
+        }
+        aside{
+            background-color: rgb(12, 81, 241);
+            border-color: rgb(199, 244, 23);
+            border-radius: 10px;
+            height: 400px;
+            width: 100%;
+            display: grid;
+            text-align: left;
+            color:gold;
+            margin: 10px;
+        }
+        article{
+            background-color: rgb(12, 81, 241);
+            border-color: rgb(199, 244, 23);
+            border-radius: 10px;
+            height: 100px;
+            width: 100%;
+            text-align: left;
+            display: grid;
+            color: gold;
+        }
+        section{
+            background-color: rgb(12, 81, 241);
+            border-color: rgb(199, 244, 23);
+            border-radius: 10px;
+            padding: 10px;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            text-align: left;
+            color: gold;
+        }
+        footer{
+            background-color: rgb(241, 12, 81);
+            border-color: rgb(170, 225, 19);
+            border-radius: 10px;
+            height: 80px;
+            display: grid;
+            display: center;
+            text-align: center;
+            color:gold;
+        }
+    </style>
+</head>
+<body>
+ <header>
+    <h3>header</h3>
+ </header>
+ <nav>
+    <h3>nav</h3>
+ </nav>
+ <main> main
+    <article>
+        article
+    </article>
+    <section> section </section>
+ </main>
+    <aside><h3>aside</h3></aside>
+    <footer><h3>footer</h3></footer>
+</body>
+</html>
